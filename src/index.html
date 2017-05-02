@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html  ng-app="myApp">
+<head >
+    <link lang="ru">
+    <meta charset="UTF-8">
+    <title>NPZ LIFE</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no'>
+    <meta http-equiv="X-Frame-Options" content="allow">
+    <meta name="google-site-verification" content="ixsp8wGmHS6jnSggZuhKnrZLkeDPJmI6eyppeJz8rWo" />
+    <meta name='description' content='Кожен громадянин європейської країни турбується про своє майбутнє та майбутнє своїх близьких. Саме тому, на сьогодні, страхування являється однією з найголовніших галузей фінансової економіки.'>
+    <meta name='keywords' content='npz life, стархова, компанія'>
+    <link type='image/x-icon' href='/img/logo.jpg?v=2' rel='Shortcut Icon'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,700italic,900' rel='stylesheet' type='text/css'>
+
+    <link rel='stylesheet' href='/css/style.css' type='text/css'/>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.0/angular-ui-router.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script>
+    <script>
+        $(function() {
+
+            $('.first').mouseenter(function() {
+                $('.dropdown-content1').css({'display': 'block'});
+            } );
+            $('.first').mouseleave(function() {
+                $('.dropdown-content1').css({'display': 'none'});
+            } );
+            $('.second').mouseenter(function() {
+                $('.dropdown-content2').css({'display': 'block'});
+            } );
+            $('.second').mouseleave(function() {
+                $('.dropdown-content2').css({'display': 'none'});
+            } );
+
+
+            $('.link1').click(function() {
+                $('.dropdown-content1').css({'display': 'none'});
+            } );
+            $('.link2').click(function() {
+                $('.dropdown-content2').css({'display': 'none'});
+            } );
+        });
+    </script>
+
+
+    <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-animate.min.js"></script>-->
+    <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-touch.min.js"></script>-->
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>-->
+    <!--<script src="/build/bower_components/angular/angular.js"></script>-->
+    <!--<script src="/build/bower_components/angular-route/angular-route.js"></script>-->
+
+
+</head>
+
+
+
+//= template/header.html
+
+<div>
+    <div class="basic__container"> </div>
+    <div  ui-view></div>
+</div>
+
+//= template/footer.html
+
+<script src="/js/main.js"></script>
+</body>
+</html>
